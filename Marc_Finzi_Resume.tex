@@ -1,0 +1,145 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=.9,top=1in]{geometry}
+%=\setlength{\hintscolumnwidth}{3cm}                        % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Marc}
+\familyname{Finzi}
+
+\address{517 East State Street, Ithaca, NY} % optional, remove the line if not wanted
+\mobile{(240) 461-2365} % optional, remove the line if not wanted
+\email{maf388@cornell.edu} % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+\renewcommand*{\namefont}{\fontsize{20}{29}\mdseries\upshape}
+%\title{Computer Science}
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+%\usepackage[colorlinks=true]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+
+
+% hanging publications: 1st line starts at beginning of line, 
+% further lines are placed a bit to the right
+\usepackage{hanging}
+\newcommand\publication[1]{%
+    \smallskip\par\hangpara{1.5em}{1}\bibentry{#1}\smallskip
+}
+
+\nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%\maketitle
+\maketitle
+\vspace*{-10mm}
+\section{Education}
+\cventry{2017 - ????}{Ph.D. in Operations Research}{Cornell University}{Ithaca, NY}{}{}
+\cventry{2013 - 2017}{B.S. Physics}{Harvey Mudd College}{Claremont, CA}{GPA: 3.8}{}
+\cventry{2009 - 2013}{\textnormal{\emph{Georgetown Day School}}}{}{Washington, DC}{}{}
+
+\vspace*{-1mm}
+
+\section{Research}
+
+\cventry{Spring 2017 - Present}{Deep Learning Research}{Cornell University}{Ithaca, NY}{}{
+Current Research Interests
+    \begin{itemize}
+        \item Data dependent regularization for semi-supervised learning
+        \item The notion of sharp and wide optima and loss surface geometry
+        \item Applying GAN's to partially discrete data spaces
+    \end{itemize}
+    }
+
+\cventry{Spring 2015 - Fall 2017}{Plasma Physics Research}{Harvey Mudd College}{Claremont, CA}{}{
+    \begin{itemize}
+        \item Led three-man HMC team to set up an experiment at UT Austin to test the theory of multipass Stochastic Heating in spherical targets using the high-power GHOST OPCPA laser. Setting up this experiment required more than 20 optical elements inside the vacuum chamber, alignment to a $5\mu m$ focal spot size, and careful synchronization between two laser systems.
+        \item Wrote image processing code using openCV to identify and characterize microspheres in SEM images, achieving 95\% accuracy on identification.
+        \item Automated sphere ejection velocity experiment using LabView, an NiDAQ, and ThorLab motor actuators.
+    \end{itemize}
+    }
+
+\vspace*{3mm} 
+\cventry{Summer 2015}{EE intern at NASA}{Goddard Space Flight Center}{Greenbelt, MD}{}{
+	\begin{itemize}
+		\item Brought concept of low cost, high precision (5mK), cryogenic temperature sensors based on the internal temperature response of commercially available transistors into practice.
+		\item Designed and prototyped a control circuit to read 16 of these sensors, and control the current to 4 heating elements.
+		\item Implemented C\texttt{++} program on the microcontroller for PID control of the heaters, with an API for accepting commands and sending data over USB to a host computer.
+		\item Developed a more scalable, higher fidelity (1mK) and easier to use PCB revision with Eagle.
+		\item Tested device under Vacuum + Cryo conditions and debugged operation.
+	\end{itemize}
+	}
+
+
+\vspace*{5mm} 
+\bibliographystyle{plain}
+\bibliography{publications}
+%\section*{Publications}
+\publication{ben2018}
+        %(\href{https://arxiv.org/abs/1806.05594}{link}, \href{https://arxiv.org/pdf/1806.05594.pdf}{pdf}, \href{https://github.com/rgeirhos/object-recognition}{data and materials})
+       % \bibentry{ben2018}
+   
+\section{Teaching Experience} 
+
+\cventry{2017 - Present}{Teaching Assistant }{Cornell}{Ithaca, NY}{}{
+    TAing for Basic Engineering Probability and Statistics (ENGRD 2700)
+}
+\cventry{2015 - 2017}{Physics Academic Excellence Tutoring }{Harvey Mudd College}{Claremont, CA}{}{
+    Tutoring for freshman and sophomore physics classes.
+}
+
+
+ \section{Technical Skills}
+ \cvline{Relevant Coursework}{Bayesian Machine Learning, Numerical Analysis for Data Science, Statistical Principles, Differential Geometry, Algorithms, Statistical Mechanics.}
+ \cvline{Programming Languages}{Python, C\texttt{++}, \LaTeX.}
+ \cvline{DL Frameworks}{Pytorch, Tensorflow}
+% \cvline{Software}
+% {GitHub, Eagle, Visual Studio.}
+% \cvline{Hardware Experience}
+% { \begin{itemize}
+%         \item Analog PCB Design%
+%         \item SPI, ADC's
+ %       \end{itemize}
+ %   }
+    \vspace*{-5.5mm}
+
+
+
+
+%\vspace*{-1mm}
+%\section{Extracurricular}
+%\cventry{2014 - Present}{Programming Side Projects}{Claremont Colleges}{Claremont, CA}{}{
+%	\begin{itemize}
+%    \item A primitive Chess Engine written in C\texttt{++}
+%	\item An interactive 1D Schrodinger Equation simulator in python to be used as a teaching tool
+ %   \item A symplectic integrator for $n$ body gravitational system complete with 3D animation
+%	\end{itemize}
+%}
+
+
+\end{document}

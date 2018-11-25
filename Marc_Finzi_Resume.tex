@@ -14,7 +14,8 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
-
+\usepackage{url}
+%\usepackage{hyperref}
 % adjust the page margins
 \usepackage[scale=.9,top=1in]{geometry}
 %=\setlength{\hintscolumnwidth}{3cm}                        % if you want to change the width of the column with the dates
@@ -36,6 +37,7 @@
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
+
 
 \usepackage{bibentry}
 \makeatletter\let\saved@bibitem\@bibitem\makeatother
@@ -66,33 +68,28 @@
 
 \vspace*{-1mm}
 
-\section{Research}
+\section{Research Experience}
 
-\cventry{Spring 2017 - Present}{Deep Learning Research}{Cornell University}{Ithaca, NY}{}{
-Current Research Interests
+\cventry{2017 - Present}{Deep Learning Research}{Prof. Andrew Wilson's group}{Cornell}{PhD student}{
     \begin{itemize}
-        \item Semi-supervised learning, heterogeneous sources of supervision
-    	\item Visual attention mechanisms and structured prediction
-        \item Wide optima and loss surface geometry
+        \item Bested SoA performance on semi-supervised image classification benchmarks
+    	\item Broadly interested in Deep Learning with smaller amounts of labeled data
     \end{itemize}
     }
 \vspace*{3mm} 
-\cventry{Spring 2015 - Fall 2017}{Plasma Physics Research}{Harvey Mudd College}{Claremont, CA}{}{
+\cventry{2015 - 2017}{Plasma Physics Research}{Prof. Tom Donnelly's lab}{Harvey Mudd College}{Undergraduate}{
     \begin{itemize}
-        \item Led three-man HMC team to set up an experiment at UT Austin to test the theory of multipass Stochastic Heating in spherical targets using the high-power GHOST OPCPA laser. Setting up this experiment required more than 20 optical elements inside the vacuum chamber, alignment to a $5\mu m$ focal spot size, and careful synchronization between two laser systems.
-        \item Wrote image processing code using openCV to identify and characterize microspheres in SEM images, achieving 95\% accuracy on identification.
-        \item Automated sphere ejection velocity experiment using LabView, an NiDAQ, and ThorLab motor actuators.
+        \item Led three-man HMC team to set up an experiment at UT Austin to test the theory of multipass Stochastic Heating using the high-power GHOST laser. This experiment required more than 20 optical elements inside the vacuum chamber, alignment to a $5\mu m$ focal spot size, and careful synchronization between two laser systems.
+        \item Computer Vision based solution for identifying microspheres in SEM images, achieving 95\% accuracy.
+        \item Experiment automation with LabView, NiDAQs, and ThorLab components.
     \end{itemize}
     }
 
 \vspace*{3mm} 
-\cventry{Summers 2014, 2015}{Internship at NASA}{Goddard Space Flight Center}{Greenbelt, MD}{}{
+\cventry{Summers 2014, 2015}{Electrical Engineering}{Alexander Kutyrev's lab}{NASA Goddard Space Flight Center}{Intern}{
 	\begin{itemize}
 		\item Brought concept of low cost, high precision (5mK), cryogenic temperature sensors based on the internal temperature response of commercially available transistors into practice.
-		\item Designed and prototyped a control circuit to read 16 of these sensors, and control the current to 4 heating elements.
-		\item Implemented C\texttt{++} program on the microcontroller for PID control of the heaters, with an API for accepting commands and sending data over USB to a host computer.
-		\item Developed a more scalable, higher fidelity (1mK) and easier to use PCB revision with Eagle.
-		\item Tested device under Vacuum + Cryo conditions and debugged operation.
+		\item Designed and prototyped a PCB for sensor control and PID, interfacing with an external microcontroller over SPI.
 	\end{itemize}
 	}
 
@@ -101,8 +98,11 @@ Current Research Interests
 \bibliographystyle{plain}
 \bibliography{publications}
 %\section*{Publications}
+\renewcommand\refname{\begin{center}
+                        \textbf{Reference}
+                      \end{center}}
 \publication{ben2018}
-        %(\href{https://arxiv.org/abs/1806.05594}{link}, \href{https://arxiv.org/pdf/1806.05594.pdf}{pdf}, \href{https://github.com/rgeirhos/object-recognition}{data and materials})
+      \hspace*{30mm}  (\href{https://openreview.net/forum?id=rkgKBhA5Y7}{link}, \href{https://openreview.net/pdf?id=rkgKBhA5Y7}{pdf})
        % \bibentry{ben2018}
  \vspace*{-3mm}   
 \section{Teaching Experience} 

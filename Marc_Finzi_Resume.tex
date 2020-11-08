@@ -26,7 +26,7 @@
 \firstname{Marc}
 \familyname{Finzi}
 
-\address{156 Orchard Street, NY, NY} % optional, remove the line if not wanted
+\address{New York City} % optional, remove the line if not wanted
 \mobile{(240) 461-2365} % optional, remove the line if not wanted
 \email{maf820@nyu.edu} % optional, remove the line if not wanted
 \homepage{mfinzi.github.io}
@@ -62,19 +62,19 @@
 \maketitle
 \vspace*{-10mm}
 \section{Education}
-\cventry{2019 - ????}{Ph.D. in Computer Science}{NYU  Courant}{NYC}{}{}
+\cventry{2019 - Now}{Ph.D. in Computer Science}{NYU  Courant}{NYC}{}{}
 \cventry{2017 - 2019}{Masters in Operations Research}{Cornell}{Ithaca}{NY}{}
 \cventry{2013 - 2017}{B.S. Physics}{Harvey Mudd College}{Claremont, CA}{GPA: 3.7}{}
 %\cventry{2009 - 2013}{\textnormal{\emph{Georgetown Day School}}}{}{Washington, DC}{}{}
 
 \vspace*{-1mm}
 
-\section{Research Experience}
+\section{Experience}
 
-\cventry{2019 - Present}{PhD Student}{Andrew G. Wilson's lab}{NYU}{}{
-Building in inductive biases for structured data outside of Images,Video,Text such as with
+\cventry{2017 - Present}{PhD Student}{Andrew G. Wilson's lab}{NYU}{}{
+Building in inductive biases for structured data outside of Images, Video, Text such as with
 \begin{itemize}
-\item Irregularly spatial data
+\item Irregularly sampled spatial data
 \item Equivariance and Symmetries
 \item Physical Priors and Dynamical Systems
 \item Probabilistic and Generative models
@@ -110,21 +110,21 @@ Building in inductive biases for structured data outside of Images,Video,Text su
 		\item Experience with models traditionally used for NLP such as LSTM and Transformer
 	\end{itemize}
 	}
-\vspace*{1.5mm} 
-\cventry{Spring 2017 -2019}{PhD Student}{Andrew G. Wilson's lab}{Cornell University}{}{
-Semi Supervised Learning
-\begin{itemize}
-        \item Achieved leading semi-supervised performance on CIFAR10 and CIFAR100, provided theoretical connection between consistency regularization and graph methods for SSL
-        \item Obtained Masters degree and transferred to NYU
-\end{itemize}
-}
+%\vspace*{1.5mm} 
+%\cventry{Spring 2017 -2019}{PhD Student}{Andrew G. Wilson's lab}{Cornell University}{}{
+%Semi Supervised Learning
+%\begin{itemize}
+%        \item Achieved leading semi-supervised performance on CIFAR10 and CIFAR100, provided theoretical connection between consistency regularization and graph methods for SSL
+%        \item Obtained Masters degree and transferred to NYU
+%\end{itemize}
+%}
 \vspace*{1.5mm} 
 \cventry{2015 - 2017}{Undergraduate Thesis in Physics}{Tom Donnelly's lab}{Harvey Mudd College}{}{
     \begin{itemize}
         %\item Led three-man HMC team to set up an experiment at UT Austin to test the theory of multipass Stochastic Heating using the high-power GHOST laser. This experiment required more than 20 optical elements inside the vacuum chamber, alignment to a $5\mu m$ focal spot size, and careful synchronization between two laser systems.
 \item Led three-man HMC team at UT Austin to conduct laser physics experiment
 		\item Applied computer vision to detect and register microspheres in SEM images, achieving 95\% accuracy.
-        \item LabView automation of laser experiments, using NiDAQs, and ThorLab components.
+        %\item LabView automation of laser experiments, using NiDAQs, and ThorLab components.
     \end{itemize}
     }
 
@@ -132,20 +132,22 @@ Semi Supervised Learning
 \cventry{Summers 2014, 2015}{Applied Physics Intern at NASA}{Alexander Kutyrev's lab}{NASA Goddard Space Flight Center}{}{
 	\begin{itemize}
 		\item Implemented a camera based image registration system to measure of mechanical positioning to sub-micron precision.
-\item Prototyped a control circuit and PCB to regulate the cryo temperature sensors control heating elements.
+		\item Embedded systems programming, analogue and digital circuit design, PCB design
+%\item Prototyped a control circuit and PCB to regulate the cryo temperature sensors control heating elements.
 		%\item Brought concept of low cost, high precision (5mK), cryogenic temperature sensors based on the internal temperature response of commercially available transistors into practice.
-		\item Embedded systems programming in C\texttt{++} for PID control, interfacing with an external microcontroller over SPI.
+%		\item Embedded systems programming in C\texttt{++} for PID control, interfacing with an external microcontroller over SPI.
 	\end{itemize}
 	}
 
 
-	
+ \section{Technical Skills}
+ \cvline{Relevant Coursework}{Advanced Machine Learning Systems, Computer Vision,  Bayesian Machine Learning, Topics in ML optimization, Numerical Analysis for Data Science, Approximate Dynamic Programming, Algorithms, Stochastic Processes}
+\cvline{Languages}{Python: 30k+ LoC, C\texttt{++}: 4k+ LoC, \LaTeX.}
+\cvline{Reviewing}{AISTATS 2019, ICML 2019, NeurIPS 2019, ICLR 2020, NeurIPS 2020}
 \vspace*{-2mm} 
 \bibliographystyle{habbrvyr}
 \bibliography{publications}
 %\section*{Publications}
-
-
 \renewcommand\refname{\begin{center}
                         \textbf{Reference}
                       \end{center}}
@@ -158,11 +160,9 @@ Semi Supervised Learning
        \publication{finzi2020simplifying}
        \publication{benton2020augerino}
        \publication{finzi2021pncnn}
-       
- \vspace*{-20mm}   
 \end{document}
 %\section{Reviewing}
-%\cvline{Conferences}{AISTATS 2019, ICML 2019, NeurIPS 2019, ICLR 2020}
+
 %\section{Teaching Experience} 
 
 %\cventry{2017 - Present}{Teaching Assistant}{Cornell}{Ithaca, NY}{}{
@@ -173,10 +173,7 @@ Semi Supervised Learning
 %    Tutoring for freshman and sophomore physics classes.
 %}
 
-
- %\section{Technical Skills}
- %\cvline{Relevant Coursework}{Advanced Machine Learning Systems, Computer Vision,  Bayesian Machine Learning, Topics in ML optimization, Numerical Analysis for Data Science, Approximate Dynamic Programming, Algorithms, Stochastic Processes}
-% \cvline{Languages}{Python: 30k+ LoC, C\texttt{++}: 3k+ LoC, \LaTeX.}
+ %\vspace*{-20mm}   
  %\cvline{DL Frameworks}{Pytorch, Tensorflow}
 % \cvline{Software}
 % {GitHub, Eagle, Visual Studio.}

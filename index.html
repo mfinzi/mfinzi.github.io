@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Begin Jekyll SEO tag v2.4.0 -->
-<!-- <title>Some Guy</title>
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+    <!-- <title>Some Guy</title>
 <meta name="generator" content="Jekyll v3.7.3" />
 <meta property="og:title" content="Some Guy" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="My email is maf388@cornell.edu" />
 <meta property="og:description" content="My email is maf388@cornell.edu" /> -->
-<!-- <link rel="canonical" href="https://mfinzi.github.io/" />
+    <!-- <link rel="canonical" href="https://mfinzi.github.io/" />
 <meta property="og:url" content="https://mfinzi.github.io/" />
 <!-- End Jekyll SEO tag -->
 
@@ -20,344 +21,369 @@
     <![endif]-->
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">  -->
     <link rel="stylesheet" href="stylesheets/styles.css">
-  </head>
+</head>
 
-  <body>
-      <style>
-      body {
-        background-color: #FBFFFF
-      }</style>
+<body>
+    <style>
+        body {
+            background-color: #FBFFFF
+        }
+    </style>
     <div class="wrapper">
-      <header>        
-        <!---->
-        <img src="me.jpg" alt="My Face" />
-        <!---->
-        <h1><a href="https://mfinzi.github.io/">Marc Finzi</a></h1>
+        <header>
+            <!---->
+            <img src="me.jpg" alt="My Face" />
+            <!---->
+            <h1><a href="https://mfinzi.github.io/">Marc Finzi</a></h1>
 
-        <ul class="downloads">
-            <li><a href="https://github.com/mfinzi"><strong>Github</strong></a></li>
-            <li><a href="https://scholar.google.com/citations?user=ysMAhlwAAAAJ&hl=en"><strong>Google Scholar</strong></a></li>
-            <li><a href="marc_finzi_cv.pdf"><strong>CV</strong></a></li>
-        </ul> 
+            <ul class="downloads">
+                <li><a href="https://github.com/mfinzi"><strong>Github</strong></a></li>
+                <li><a href="https://scholar.google.com/citations?user=ysMAhlwAAAAJ&hl=en"><strong>Google
+                            Scholar</strong></a></li>
+                <li><a href="marc_finzi_cv.pdf"><strong>CV</strong></a></li>
+            </ul>
 
-        <br>
-        <p> You can contact me at maf820@nyu.edu</p>
-        
-
-          
-        
-        
-      </header>
-      <section>
+            <br>
+            <p> You can contact me at maf820@nyu.edu</p>
 
 
-<p>I’m a PhD student in Computer Science at NYU, working with 
-  <a href="https://people.orie.cornell.edu/andrew/">Professor Andrew Wilson</a> on the process of 'baking in' knowledge about the structure of data into deep learning models. 
 
-  I have worked on <a href="https://arxiv.org/abs/2002.12880">general convolutional models</a> that can simultaneously be applied to a wide variety of spatial data types like Images, Molecules, Dynamical Systems
-   and with a choice over the equivariance that matches the task like translation, rotation, scaling, and permutation.
-  I've worked on incorporating inductive biases from physics such <a href="https://arxiv.org/abs/2002.12880">Noether symmetries and conservation laws</a> and 
+
+
+        </header>
+        <section>
+
+
+            <p>I’m a PhD student in Computer Science at NYU, working with
+                <a href="https://people.orie.cornell.edu/andrew/">Professor Andrew Wilson</a>.
+
+                I study deep learning and in my research I have been developing new methods
+                for incorporating inductive biases into deep learning models,
+                understanding the impacts these biases have on learning and generalization, and developing ML models for
+                scientific applications.
+                I am also extrememly interested in leveraging large pretrained models for tasks other than those that
+                they were intended for, making use of the
+                more generic inductive biases that can be induced by sufficient data, as well as overlapping structure.
+
+                <!-- Much of my research is focused on incorporating inductive biases into deep learning models, often baking in structure about the data. 
+  For example, <a href="https://arxiv.org/abs/2002.12880">LieConv</a> architecture wide variety of spatial data types like Images, Molecules, Dynamical Systems
+   and with a choice over the equivariance that matches the task like translation, rotation, scaling, and permutation. 
+   With <a href="https://github.com/mfinzi/equivariant-MLP/tree/master/emlp">EMLP</a>, I developed a general method for constructing equivariant layers for any given finite dimensional representation and symmetry group.
+  I've worked on incorporating inductive biases from physics such conservation laws and 
   <a href="https://github.com/mfinzi/hamiltonian-biases">physical constraints</a> for Hamiltonain systems.
-  I've also worked on convolutional networks that make strong use of the underlying continuous nature of the input, and reason about the input <a href="https://openreview.net/pdf?id=T1XmO8ScKim">probabilistically</a>.
-
-  <p>I did my BS in Physics at <a href="https://physics.hmc.edu/">Harvey Mudd College</a>.
-</section>
-<section>
-  <h2>
-    Publications
-</h2>
-<ul id="publications">
-<li>
-        <span class='title'>
-            <strong>A Stable and Scalable Method for Solving Initial Value PDEs with Neural Networks</strong>
-        </span>
-        <br />
-        <span class='authors'>
-           <strong>Marc Finzi</strong>*, Andres Potapczynski*, Matthew Choptuik, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICLR<!--
-     --></span>,
-        <span class='year'>
-            2023
-        </span>
-    </li>
-    <li>
-        <span class='title'>
-            <strong>The Lie Derivative for Measuring Learned Equivariance</strong>
-        </span>
-        <br />
-        <span class='authors'>
-           Nate Gruver*, <strong>Marc Finzi</strong>*, Micah Goldblum, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICLR (Oral)<!--
-     --></span>,
-        <span class='year'>
-            2023
-        </span>
-        [<a href="https://arxiv.org/abs/2210.02984">ArXiv</a>,
-<a href="https://github.com/ngruver/lie-deriv">Code</a>]
-    </li>
-    <li>
-        <span class='title'>
-            <strong>PAC-Bayes Compression Bounds So Tight That They Can Explain Generalization</strong>
-        </span>
-        <br />
-        <span class='authors'>
-           Sanae Lotfi*, <strong>Marc Finzi</strong>*, Sanyam Kapoor*, Andres Potapczynski*, Micah Goldblum, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            NeurIPS<!--
-     --></span>,
-        <span class='year'>
-            2022
-        </span>
-        [<a href="https://arxiv.org/abs/2211.13609">ArXiv</a>,
-<a href="https://github.com/activatedgeek/tight-pac-bayes">Code</a>]
-    </li>
-    <li>
-        <span class='title'>
-            <strong>Deconstructing the Inductive Biases of Hamiltonian Neural Networks</strong>
-        </span>
-        <br />
-        <span class='authors'>
-           Nate Gruver, <strong>Marc Finzi</strong>, Samuel Stanton, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICLR (Spotlight)<!--
-     --></span>,
-        <span class='year'>
-            2022
-        </span>
-        [<a href="https://arxiv.org/abs/2202.04836">ArXiv</a>,
-<a href="https://github.com/ngruver/decon-hnn">Code</a>]
-    </li>
-<li>
-    <span class='title'>
-        <strong>Residual Pathway Priors for Soft Equivariance Constraints</strong>
-    </span>
-    <br />
-    <span class='authors'>
-       <strong> Marc Finzi</strong>*, Greg Benton*, Andrew Gordon Wilson
-    </span>
-    <br />
-    <span class='conference'>
-        NeurIPS<!--
- --></span>,
-    <span class='year'>
-        2021
-    </span>
-    [<a href="https://arxiv.org/abs/2112.01388">ArXiv</a>,
-<a href="https://github.com/mfinzi/residual-pathway-priors">Code</a>]
-</li>
   
-  <li>
-    <span class='title'>
-        <strong>A Practical Method for Constructing Equivariant Multilayer Perceptrons for Arbitrary Matrix Groups </strong>
-    </span>
-    <br />
-    <span class='authors'>
-       <strong> Marc Finzi</strong>, Max Welling, Andrew Gordon Wilson
-    </span>
-    <br />
-    <span class='conference'>
-        ICML (Long Oral)<!--
+  More recently, I have been working on -->
+            <p>I did my BS in Physics at <a href="https://physics.hmc.edu/">Harvey Mudd College</a>.
+                I was a PhD student at Cornell from 2017-2019 after which I recieved a masters and transferred to NYU. I
+                intend to graduate fall of 2023.
+        </section>
+        <section>
+            <h2>
+                Publications
+            </h2>
+            <ul id="publications">
+                <li>
+                    <span class='title'>
+                        <strong>A Stable and Scalable Method for Solving Initial Value PDEs with Neural
+                            Networks</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong>Marc Finzi</strong>*, Andres Potapczynski*, Matthew Choptuik, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICLR<!--
+     --></span>,
+                    <span class='year'>
+                        2023
+                    </span>
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>The Lie Derivative for Measuring Learned Equivariance</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Nate Gruver*, <strong>Marc Finzi</strong>*, Micah Goldblum, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICLR (Oral)<!--
+     --></span>,
+                    <span class='year'>
+                        2023
+                    </span>
+                    [<a href="https://arxiv.org/abs/2210.02984">ArXiv</a>,
+                    <a href="https://github.com/ngruver/lie-deriv">Code</a>]
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>PAC-Bayes Compression Bounds So Tight That They Can Explain Generalization</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Sanae Lotfi*, <strong>Marc Finzi</strong>*, Sanyam Kapoor*, Andres Potapczynski*, Micah
+                        Goldblum, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        NeurIPS<!--
+     --></span>,
+                    <span class='year'>
+                        2022
+                    </span>
+                    [<a href="https://arxiv.org/abs/2211.13609">ArXiv</a>,
+                    <a href="https://github.com/activatedgeek/tight-pac-bayes">Code</a>]
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>Deconstructing the Inductive Biases of Hamiltonian Neural Networks</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Nate Gruver, <strong>Marc Finzi</strong>, Samuel Stanton, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICLR (Spotlight)<!--
+     --></span>,
+                    <span class='year'>
+                        2022
+                    </span>
+                    [<a href="https://arxiv.org/abs/2202.04836">ArXiv</a>,
+                    <a href="https://github.com/ngruver/decon-hnn">Code</a>]
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>Residual Pathway Priors for Soft Equivariance Constraints</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong> Marc Finzi</strong>*, Greg Benton*, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        NeurIPS<!--
  --></span>,
-    <span class='year'>
-        2021
-    </span>
-    [<a href="https://arxiv.org/abs/2104.09459">ArXiv</a>,
-<a href="https://github.com/mfinzi/equivariant-MLP">Code</a>,
-    <a href="https://emlp.readthedocs.io/en/latest/">Documentation</a>]
-</li>
-  
-  <li>
-    <span class='title'>
-        <strong>SKIing on Simplices: Kernel Interpolation on the Permutohedral Lattice for Scalable Gaussian Processes </strong>
-    </span>
-    <br />
-    <span class='authors'>
-       Sanyaam Kapoor*, <strong> Marc Finzi</strong>*, Ke Alexander Wang, Andrew Gordon Wilson
-    </span>
-    <br />
-    <span class='conference'>
-        ICML (Long Oral)<!--
- --></span>,
-    <span class='year'>
-        2021
-    </span>
-    [<a href="https://arxiv.org/abs/2106.06695">ArXiv</a>,
-<a href="https://github.com/activatedgeek/simplex-gp">Code</a>]
-    
-</li>
-  
-  <li>
-    <span class='title'>
-        <strong>Probabilistic Numeric Convolutional Neural Networks </strong>
-    </span>
-    <br />
-    <span class='authors'>
-       <strong> Marc Finzi</strong>, Roberto Bondesan, Max Welling
-    </span>
-    <br />
-    <span class='conference'>
-        ICLR<!--
- --></span>,
-    <span class='year'>
-        2021
-    </span>
-[<a href="https://arxiv.org/abs/2010.10876">ArXiv</a>,
-<a href="https://github.com/Qualcomm-AI-research/ProbabilisticNumericCNNs">Code</a>]
-</li>
+                    <span class='year'>
+                        2021
+                    </span>
+                    [<a href="https://arxiv.org/abs/2112.01388">ArXiv</a>,
+                    <a href="https://github.com/mfinzi/residual-pathway-priors">Code</a>]
+                </li>
 
-  <li>
-    <span class='title'>
-        <strong>Simplifying Hamiltonian and Lagrangian Neural Networks via Explicit Constraints </strong>
-    </span>
-    <br />
-    <span class='authors'>
-       <strong> Marc Finzi</strong>*, Ke Alexander Wang*, Andrew Gordon Wilson
-    </span>
-    <br />
-    <span class='conference'>
-        NeurIPS (Spotlight)<!--
+                <li>
+                    <span class='title'>
+                        <strong>A Practical Method for Constructing Equivariant Multilayer Perceptrons for Arbitrary
+                            Matrix Groups </strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong> Marc Finzi</strong>, Max Welling, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICML (Long Oral)<!--
  --></span>,
-    <span class='year'>
-        2020
-    </span>
-    [<a href="https://arxiv.org/pdf/2010.13581.pdf">PDF</a>,
-    <a href="https://arxiv.org/abs/2010.13581">ArXiv</a>,
-<a href="https://github.com/mfinzi/constrained-hamiltonian-neural-networks">Code</a>]
-</li>
+                    <span class='year'>
+                        2021
+                    </span>
+                    [<a href="https://arxiv.org/abs/2104.09459">ArXiv</a>,
+                    <a href="https://github.com/mfinzi/equivariant-MLP">Code</a>,
+                    <a href="https://emlp.readthedocs.io/en/latest/">Documentation</a>]
+                </li>
 
-<li>
-  <span class='title'>
-      <strong>Learning Invariances in Neural Networks from Training Data </strong>
-  </span>
-  <br />
-  <span class='authors'>Greg Benton,
-     <strong> Marc Finzi</strong>, Pavel Izmailov, Andrew Gordon Wilson
-  </span>
-  <br />
-  <span class='conference'>
-      NeurIPS<!--
+                <li>
+                    <span class='title'>
+                        <strong>SKIing on Simplices: Kernel Interpolation on the Permutohedral Lattice for Scalable
+                            Gaussian Processes </strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Sanyaam Kapoor*, <strong> Marc Finzi</strong>*, Ke Alexander Wang, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICML (Long Oral)<!--
+ --></span>,
+                    <span class='year'>
+                        2021
+                    </span>
+                    [<a href="https://arxiv.org/abs/2106.06695">ArXiv</a>,
+                    <a href="https://github.com/activatedgeek/simplex-gp">Code</a>]
+
+                </li>
+
+                <li>
+                    <span class='title'>
+                        <strong>Probabilistic Numeric Convolutional Neural Networks </strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong> Marc Finzi</strong>, Roberto Bondesan, Max Welling
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICLR<!--
+ --></span>,
+                    <span class='year'>
+                        2021
+                    </span>
+                    [<a href="https://arxiv.org/abs/2010.10876">ArXiv</a>,
+                    <a href="https://github.com/Qualcomm-AI-research/ProbabilisticNumericCNNs">Code</a>]
+                </li>
+
+                <li>
+                    <span class='title'>
+                        <strong>Simplifying Hamiltonian and Lagrangian Neural Networks via Explicit Constraints
+                        </strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong> Marc Finzi</strong>*, Ke Alexander Wang*, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        NeurIPS (Spotlight)<!--
+ --></span>,
+                    <span class='year'>
+                        2020
+                    </span>
+                    [<a href="https://arxiv.org/pdf/2010.13581.pdf">PDF</a>,
+                    <a href="https://arxiv.org/abs/2010.13581">ArXiv</a>,
+                    <a href="https://github.com/mfinzi/constrained-hamiltonian-neural-networks">Code</a>]
+                </li>
+
+                <li>
+                    <span class='title'>
+                        <strong>Learning Invariances in Neural Networks from Training Data </strong>
+                    </span>
+                    <br />
+                    <span class='authors'>Greg Benton,
+                        <strong> Marc Finzi</strong>, Pavel Izmailov, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        NeurIPS<!--
 --></span>,
-  <span class='year'>
-      2020
-  </span>
-  [<a href="https://arxiv.org/pdf/2010.11882.pdf">PDF</a>,
-  <a href="https://arxiv.org/abs/2010.11882">ArXiv</a>,
-   <a href="https://github.com/g-benton/learning-invariances">Code</a>]
-</li>
-  <li>
-        <span class='title'>
-            <strong>Generalizing Convolutional Neural Networks for Equivariance to Lie Groups on Arbitrary Continuous Data </strong>
-        </span>
-        <br />
-        <span class='authors'>
-           <strong> Marc Finzi</strong>, Samuel Stanton, Pavel Izmailov, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICML<!--
+                    <span class='year'>
+                        2020
+                    </span>
+                    [<a href="https://arxiv.org/pdf/2010.11882.pdf">PDF</a>,
+                    <a href="https://arxiv.org/abs/2010.11882">ArXiv</a>,
+                    <a href="https://github.com/g-benton/learning-invariances">Code</a>]
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>Generalizing Convolutional Neural Networks for Equivariance to Lie Groups on Arbitrary
+                            Continuous Data </strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong> Marc Finzi</strong>, Samuel Stanton, Pavel Izmailov, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICML<!--
      --></span>,
-        <span class='year'>
-            2020
-        </span>
-    [<a href="https://arxiv.org/pdf/2002.12880.pdf">PDF</a>,
-         <a href="https://arxiv.org/abs/2002.12880">ArXiv</a>,
-         <a href="https://github.com/mfinzi/LieConv">Code</a>]
-    </li>
-  <li>
-        <span class='title'>
-            <strong>Semi-Supervised Learning with Normalizing Flows</strong>
-        </span>
-        <br />
-        <span class='authors'>
-          Pavel Izmailov, Polina Kirichenko, <strong> Marc Finzi</strong>, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICML<!--
+                    <span class='year'>
+                        2020
+                    </span>
+                    [<a href="https://arxiv.org/pdf/2002.12880.pdf">PDF</a>,
+                    <a href="https://arxiv.org/abs/2002.12880">ArXiv</a>,
+                    <a href="https://github.com/mfinzi/LieConv">Code</a>]
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>Semi-Supervised Learning with Normalizing Flows</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Pavel Izmailov, Polina Kirichenko, <strong> Marc Finzi</strong>, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICML<!--
      --></span>,
-        <span class='year'>
-            2020
-        </span>
-        [<a href="https://arxiv.org/abs/1912.13025.pdf">PDF</a>,
-    <a href="https://arxiv.org/abs/1912.13025">ArXiv</a>,
-    <a href="https://github.com/izmailovpavel/flowgmm">Code</a>]
-    </li>
-  
-  
-    <li>
-        <span class='title'>
-            <strong>There Are Many Consistent Explanations of Unlabeled Data: Why You Should Average</strong>
-        </span>
-        <br />
-        <span class='authors'>
-            Ben Athiwaratkun, <strong> Marc Finzi</strong>, Pavel Izmailov, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICLR<!--
-     --></span>,
-        <span class='year'>
-            2019
-        </span>
-        [<a href="https://openreview.net/pdf?id=rkgKBhA5Y7">PDF</a>,
-         <a href="https://openreview.net/pdf?id=rkgKBhA5Y7">ArXiv</a>,
-         <a href="https://github.com/benathi/fastswa-semi-sup">Code</a>]
-    </li>
+                    <span class='year'>
+                        2020
+                    </span>
+                    [<a href="https://arxiv.org/abs/1912.13025.pdf">PDF</a>,
+                    <a href="https://arxiv.org/abs/1912.13025">ArXiv</a>,
+                    <a href="https://github.com/izmailovpavel/flowgmm">Code</a>]
+                </li>
 
 
-  </section>
-  <section>
-  <h2>
-    Workshop Papers
-</h2>
-<ul id="Workshop Papers">
-  <li>
-        <span class='title'>
-            <strong>Effective Surrogate Models for Protein Design with Bayesian Optimization</strong>
-        </span>
-        <br />
-        <span class='authors'>
-            Nate Gruver, Samuel Stanton, Polina Kirichenko, <strong>Marc Finzi</strong>, Phillip Maffettone, Vivek Myers, Emily Delaney, Peyton Greenside, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICML Computational Biology Workshop<!--
+                <li>
+                    <span class='title'>
+                        <strong>There Are Many Consistent Explanations of Unlabeled Data: Why You Should
+                            Average</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Ben Athiwaratkun, <strong> Marc Finzi</strong>, Pavel Izmailov, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICLR<!--
      --></span>,
-        <span class='year'>
-            2021
-        </span>
-        [<a href="https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_61.pdf">PDF</a>]
-    </li>
-  <li>
-        <span class='title'>
-            <strong>Invertible Convolutional Networks</strong>
-        </span>
-        <br />
-        <span class='authors'>
-            <strong> Marc Finzi</strong>, Pavel Izmailov, Wesley Maddox, Polina Kirichenko, Andrew Gordon Wilson
-        </span>
-        <br />
-        <span class='conference'>
-            ICML INNF Workshop<!--
+                    <span class='year'>
+                        2019
+                    </span>
+                    [<a href="https://openreview.net/pdf?id=rkgKBhA5Y7">PDF</a>,
+                    <a href="https://openreview.net/pdf?id=rkgKBhA5Y7">ArXiv</a>,
+                    <a href="https://github.com/benathi/fastswa-semi-sup">Code</a>]
+                </li>
+
+
+        </section>
+        <section>
+            <h2>
+                Workshop Papers
+            </h2>
+            <ul id="Workshop Papers">
+                <li>
+                    <span class='title'>
+                        <strong>Effective Surrogate Models for Protein Design with Bayesian Optimization</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        Nate Gruver, Samuel Stanton, Polina Kirichenko, <strong>Marc Finzi</strong>, Phillip Maffettone,
+                        Vivek Myers, Emily Delaney, Peyton Greenside, Andrew Gordon Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICML Computational Biology Workshop<!--
      --></span>,
-        <span class='year'>
-            2019
-        </span>
-        [<a href="https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_26.pdf">PDF</a>]
-    </li>
-  
- </section>
+                    <span class='year'>
+                        2021
+                    </span>
+                    [<a href="https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_61.pdf">PDF</a>]
+                </li>
+                <li>
+                    <span class='title'>
+                        <strong>Invertible Convolutional Networks</strong>
+                    </span>
+                    <br />
+                    <span class='authors'>
+                        <strong> Marc Finzi</strong>, Pavel Izmailov, Wesley Maddox, Polina Kirichenko, Andrew Gordon
+                        Wilson
+                    </span>
+                    <br />
+                    <span class='conference'>
+                        ICML INNF Workshop<!--
+     --></span>,
+                    <span class='year'>
+                        2019
+                    </span>
+                    [<a
+                        href="https://invertibleworkshop.github.io/INNF_2019/accepted_papers/pdfs/INNF_2019_paper_26.pdf">PDF</a>]
+                </li>
+
+        </section>
     </div>
     <script src="/assets/js/scale.fix.js"></script>
-  </body>
+</body>
+
 </html>
